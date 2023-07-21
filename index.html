@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="./styles.css">
+     
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <img class="logo" src="./img/logo.gif">
+    <main>
+           <label>
+              Converter <b>de</b>
+               <select id="select-value">
+                   <option value="real">R$ Real brasileiro</option>
+                   <option value="dolar">US$ Dólar Americano</option>
+                   <option value="euro">€ Euro</option>
+                   <option value="libra">£ Libra</option>
+                   <option value="bitcoin">Bitcoin</option>   
+               </select>
+           </label>
+           <label>
+            Converter <b>para</b>
+             <select id="select-values">
+                 <option value="real">R$ Real brasileiro</option>
+                 <option value="dolar">US$ Dólar Americano</option>
+                 <option value="euro">€ Euro</option>
+                 <option value="libra">£ Libra</option>
+                 <option value="bitcoin">Bitcoin</option>
+             </select>
+           </label>
+           <label>
+             Valor
+             <input id="get-value" placeholder="R$ 10.000,00">
+           </label>
+            <button id="button">Converter</button>
+            <section>
+                <div>
+                    <img  id="trocaImg"  src="./img/brasil.png" alt="logo-moeda-Real-a-converter">
+                    <p id="trocaCoin" class="currency">Real</p>
+                    <p id="values">R$ 0,00</p>
+                </div>
+                
+                <img  class="arrow" src="./img/Vector.png">
+                
+                <div>
+                    <img id="change-img" src="./img/brasil.png" alt="logo-moeda-americana-a-converter">
+                    <p  id="change-coin"  class="currency">Real</p>
+                    <p id="values-2">R$ 0,00</p>
+                </div>
+            </section>
+    </main>
+
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
